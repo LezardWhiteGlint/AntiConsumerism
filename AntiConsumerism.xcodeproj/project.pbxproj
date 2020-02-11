@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9235CC123EFF7F80037F5DA /* NeedOrWant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9235CC023EFF7F80037F5DA /* NeedOrWant.swift */; };
+		F9235CC323F257F90037F5DA /* IWantIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9235CC223F257F90037F5DA /* IWantIt.swift */; };
+		F9235CC523F258090037F5DA /* INeedIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9235CC423F258090037F5DA /* INeedIt.swift */; };
+		F9235CC723F262CB0037F5DA /* Succeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9235CC623F262CB0037F5DA /* Succeed.swift */; };
 		F93B230623E681C3002E34F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B230523E681C3002E34F9 /* AppDelegate.swift */; };
 		F93B230823E681C3002E34F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B230723E681C3002E34F9 /* SceneDelegate.swift */; };
-		F93B230A23E681C3002E34F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B230923E681C3002E34F9 /* ContentView.swift */; };
+		F93B230A23E681C3002E34F9 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B230923E681C3002E34F9 /* HomeScreen.swift */; };
 		F93B230C23E681C9002E34F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F93B230B23E681C9002E34F9 /* Assets.xcassets */; };
 		F93B230F23E681C9002E34F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F93B230E23E681C9002E34F9 /* Preview Assets.xcassets */; };
 		F93B231223E681C9002E34F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93B231023E681C9002E34F9 /* LaunchScreen.storyboard */; };
+		F9C547AB23EE8F6800A69C28 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C547AA23EE8F6800A69C28 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F9235CC023EFF7F80037F5DA /* NeedOrWant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedOrWant.swift; sourceTree = "<group>"; };
+		F9235CC223F257F90037F5DA /* IWantIt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWantIt.swift; sourceTree = "<group>"; };
+		F9235CC423F258090037F5DA /* INeedIt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INeedIt.swift; sourceTree = "<group>"; };
+		F9235CC623F262CB0037F5DA /* Succeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Succeed.swift; sourceTree = "<group>"; };
 		F93B230223E681C3002E34F9 /* AntiConsumerism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntiConsumerism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F93B230523E681C3002E34F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F93B230723E681C3002E34F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F93B230923E681C3002E34F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F93B230923E681C3002E34F9 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		F93B230B23E681C9002E34F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F93B230E23E681C9002E34F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F93B231123E681C9002E34F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F93B231323E681C9002E34F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C547AA23EE8F6800A69C28 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,14 @@
 		F93B230423E681C3002E34F9 /* AntiConsumerism */ = {
 			isa = PBXGroup;
 			children = (
+				F9C547A923EE8A3B00A69C28 /* Model */,
 				F93B230523E681C3002E34F9 /* AppDelegate.swift */,
 				F93B230723E681C3002E34F9 /* SceneDelegate.swift */,
-				F93B230923E681C3002E34F9 /* ContentView.swift */,
+				F93B230923E681C3002E34F9 /* HomeScreen.swift */,
+				F9235CC023EFF7F80037F5DA /* NeedOrWant.swift */,
+				F9235CC223F257F90037F5DA /* IWantIt.swift */,
+				F9235CC423F258090037F5DA /* INeedIt.swift */,
+				F9235CC623F262CB0037F5DA /* Succeed.swift */,
 				F93B230B23E681C9002E34F9 /* Assets.xcassets */,
 				F93B231023E681C9002E34F9 /* LaunchScreen.storyboard */,
 				F93B231323E681C9002E34F9 /* Info.plist */,
@@ -73,6 +88,14 @@
 				F93B230E23E681C9002E34F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9C547A923EE8A3B00A69C28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9C547AA23EE8F6800A69C28 /* UserData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +171,12 @@
 			files = (
 				F93B230623E681C3002E34F9 /* AppDelegate.swift in Sources */,
 				F93B230823E681C3002E34F9 /* SceneDelegate.swift in Sources */,
-				F93B230A23E681C3002E34F9 /* ContentView.swift in Sources */,
+				F9235CC323F257F90037F5DA /* IWantIt.swift in Sources */,
+				F9C547AB23EE8F6800A69C28 /* UserData.swift in Sources */,
+				F9235CC723F262CB0037F5DA /* Succeed.swift in Sources */,
+				F9235CC123EFF7F80037F5DA /* NeedOrWant.swift in Sources */,
+				F93B230A23E681C3002E34F9 /* HomeScreen.swift in Sources */,
+				F9235CC523F258090037F5DA /* INeedIt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
