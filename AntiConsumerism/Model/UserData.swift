@@ -8,14 +8,26 @@
 
 import UIKit
 
-//TODO: use userdefault to store data
+
 struct UserData {
     var completedTimes = UserDefaults.standard.integer(forKey: "completedTimes")
     var succeedTimes = UserDefaults.standard.integer(forKey: "succeedTimes")
     var totalSaved = UserDefaults.standard.integer(forKey: "totalSaved")
-    var userMonthlyIncome = UserDefaults.standard.integer(forKey: "userMonthlyIncome")
+    var userMonthlyIncome = UserDefaults.standard.double(forKey: "userMonthlyIncome")
     
     func setCompletedTimes(completedTimes:Int){
         UserDefaults.standard.set(completedTimes, forKey: "completedTimes")
+    }
+    
+    func setSucceedTimes(succeedTimes:Int){
+        UserDefaults.standard.set(succeedTimes,forKey: "succeedTimes")
+    }
+    
+    func setTotalSaved(totalSaved:Int){
+        UserDefaults.standard.set(totalSaved,forKey: "totalSaved")
+    }
+    
+    func setUserMonthlyIncome(userMonthlyIncome:Double){
+        UserDefaults.standard.set(userMonthlyIncome,forKey: "userMonthlyIncome")
     }
 }

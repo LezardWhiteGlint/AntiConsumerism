@@ -1,33 +1,30 @@
 //
-//  INeedIt.swift
+//  MyIncome.swift
 //  AntiConsumerism
 //
-//  Created by Lezardvaleth on 2020/2/11.
+//  Created by Lezardvaleth on 2020/2/12.
 //  Copyright © 2020 Lezardvaleth. All rights reserved.
 //
 
 import SwiftUI
 
-struct INeedIt: View {
-    @EnvironmentObject var cost : RootState
-    @State private var itemCost = ""
+struct MyIncome: View {
+    var userData = UserData()
+    @State private var userIncome = String(UserData().userMonthlyIncome)
     @State private var showAlert = false
     @State private var showNext = false
-    @State private var subscriptionToggle = false
-    @State private var subscriptionDuration = "12"
     
     var body: some View {
         VStack(alignment: .center, spacing: 20){
-            Text("我需要付出的金额")
-            Toggle("是每月扣费的消费", isOn: $subscriptionToggle)
+            Text("我的月收入")
             HStack(){
-                Text("金额")
-                TextField("输入金额", text: $itemCost)
+                Text("月收入")
+                TextField("输入金额", text: $userIncome)
             }
-            NavigationLink("", destination: MyIncome(), isActive: $showNext)
+            NavigationLink("", destination: CostPercentage(), isActive: $showNext)
             Button(action: {
-                if let printOut = Double(self.itemCost){
-                    self.cost.thisTimeCost = printOut
+                if let printOut = Double(self.userIncome){
+                    self.userData.setUserMonthlyIncome(userMonthlyIncome: printOut)
                     self.showNext = true
                 }else{
                     self.showAlert = true
@@ -49,8 +46,8 @@ struct INeedIt: View {
     }
 }
 
-struct INeedIt_Previews: PreviewProvider {
+struct MyIncome_Previews: PreviewProvider {
     static var previews: some View {
-        INeedIt()
+        MyIncome()
     }
 }

@@ -9,8 +9,26 @@
 import SwiftUI
 
 struct Succeed: View {
+    @EnvironmentObject var rootIsActive : RootState
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack() {
+            Text("😄反剁手成功😄")
+                .font(.headline)
+            Divider()
+            Button(action: {
+                //pop to root
+                self.rootIsActive.rootIsActive = false
+            })
+            {
+                Text("确定")
+                    .foregroundColor(.white)
+                    .frame(width: 100, height: 50)
+                    .cornerRadius(15)
+                    .background(Color.green)
+                    .font(.title)
+            }
+        }.padding()
     }
 }
 
