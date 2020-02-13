@@ -29,6 +29,7 @@ struct IWantIt: View {
                 .background(Color.red)
                 .font(.title)
         }.padding()
+        .navigationBarBackButtonHidden(true)
     }
 }
 

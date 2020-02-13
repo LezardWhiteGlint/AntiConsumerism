@@ -14,6 +14,7 @@
 		F9235CC923F27B660037F5DA /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9235CC823F27B660037F5DA /* RootState.swift */; };
 		F9235CCB23F41B6A0037F5DA /* MyIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9235CCA23F41B6A0037F5DA /* MyIncome.swift */; };
 		F9235CCD23F423800037F5DA /* CostPercentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9235CCC23F423800037F5DA /* CostPercentage.swift */; };
+		F9235CCF23F4FA820037F5DA /* BuyIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9235CCE23F4FA820037F5DA /* BuyIt.swift */; };
 		F93B230623E681C3002E34F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B230523E681C3002E34F9 /* AppDelegate.swift */; };
 		F93B230823E681C3002E34F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B230723E681C3002E34F9 /* SceneDelegate.swift */; };
 		F93B230A23E681C3002E34F9 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B230923E681C3002E34F9 /* HomeScreen.swift */; };
@@ -31,6 +32,7 @@
 		F9235CC823F27B660037F5DA /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		F9235CCA23F41B6A0037F5DA /* MyIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIncome.swift; sourceTree = "<group>"; };
 		F9235CCC23F423800037F5DA /* CostPercentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostPercentage.swift; sourceTree = "<group>"; };
+		F9235CCE23F4FA820037F5DA /* BuyIt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyIt.swift; sourceTree = "<group>"; };
 		F93B230223E681C3002E34F9 /* AntiConsumerism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntiConsumerism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F93B230523E681C3002E34F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F93B230723E681C3002E34F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				F9235CCA23F41B6A0037F5DA /* MyIncome.swift */,
 				F9235CCC23F423800037F5DA /* CostPercentage.swift */,
 				F9235CC623F262CB0037F5DA /* Succeed.swift */,
+				F9235CCE23F4FA820037F5DA /* BuyIt.swift */,
 				F93B230B23E681C9002E34F9 /* Assets.xcassets */,
 				F93B231023E681C9002E34F9 /* LaunchScreen.storyboard */,
 				F93B231323E681C9002E34F9 /* Info.plist */,
@@ -189,6 +192,7 @@
 				F93B230A23E681C3002E34F9 /* HomeScreen.swift in Sources */,
 				F9235CC523F258090037F5DA /* INeedIt.swift in Sources */,
 				F9235CCD23F423800037F5DA /* CostPercentage.swift in Sources */,
+				F9235CCF23F4FA820037F5DA /* BuyIt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

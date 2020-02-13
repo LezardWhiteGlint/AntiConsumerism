@@ -32,7 +32,7 @@ struct NeedOrWant: View {
                     .background(Color.blue)
                     .font(.title)
             }
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

@@ -23,8 +23,8 @@ struct MyIncome: View {
             }
             NavigationLink("", destination: CostPercentage(), isActive: $showNext)
             Button(action: {
-                if let printOut = Double(self.userIncome){
-                    self.userData.setUserMonthlyIncome(userMonthlyIncome: printOut)
+                if let income = Double(self.userIncome){
+                    self.userData.setUserMonthlyIncome(userMonthlyIncome: income)
                     self.showNext = true
                 }else{
                     self.showAlert = true
@@ -42,7 +42,7 @@ struct MyIncome: View {
                     {Alert(title: Text("仅能输入数字"), message: nil, dismissButton: .default(Text("OK")))}
             }
         }.padding()
-        
+        .navigationBarBackButtonHidden(true)
     }
 }
 

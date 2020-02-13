@@ -16,6 +16,11 @@ struct HomeScreen: View {
         VStack {
             NavigationView {
                 VStack(alignment: .center, spacing: 20) {
+                    HStack {
+                        Spacer()
+                        Text("record")
+                            
+                    }
                     Text("本APP可以引导你对自己即将到来的消费进行理性思考，一定程度上减少不必要的浪费")
                         .font(.headline)
                     Divider()
