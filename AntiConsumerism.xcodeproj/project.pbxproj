@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E20F7ABD04908E07CD9B2A0 /* Pods_AntiConsumerism.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D54F5CD14C09A6421AD4412 /* Pods_AntiConsumerism.framework */; };
 		F9235CC123EFF7F80037F5DA /* NeedOrWant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9235CC023EFF7F80037F5DA /* NeedOrWant.swift */; };
 		F9235CC323F257F90037F5DA /* IWantIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9235CC223F257F90037F5DA /* IWantIt.swift */; };
 		F9235CC523F258090037F5DA /* INeedIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9235CC423F258090037F5DA /* INeedIt.swift */; };
@@ -22,10 +23,14 @@
 		F93B230F23E681C9002E34F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F93B230E23E681C9002E34F9 /* Preview Assets.xcassets */; };
 		F93B231223E681C9002E34F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93B231023E681C9002E34F9 /* LaunchScreen.storyboard */; };
 		F995F89023FB9DD700A669BF /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995F88F23FB9DD700A669BF /* Record.swift */; };
+		F995F89223FBFECF00A669BF /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995F89123FBFECF00A669BF /* Advertisement.swift */; };
 		F9C547AB23EE8F6800A69C28 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C547AA23EE8F6800A69C28 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D54F5CD14C09A6421AD4412 /* Pods_AntiConsumerism.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntiConsumerism.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D748C7CFEA1FDC19AD38B356 /* Pods-AntiConsumerism.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntiConsumerism.release.xcconfig"; path = "Target Support Files/Pods-AntiConsumerism/Pods-AntiConsumerism.release.xcconfig"; sourceTree = "<group>"; };
+		F41D925757EC3C607DE09E46 /* Pods-AntiConsumerism.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntiConsumerism.debug.xcconfig"; path = "Target Support Files/Pods-AntiConsumerism/Pods-AntiConsumerism.debug.xcconfig"; sourceTree = "<group>"; };
 		F9235CC023EFF7F80037F5DA /* NeedOrWant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedOrWant.swift; sourceTree = "<group>"; };
 		F9235CC223F257F90037F5DA /* IWantIt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWantIt.swift; sourceTree = "<group>"; };
 		F9235CC423F258090037F5DA /* INeedIt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INeedIt.swift; sourceTree = "<group>"; };
@@ -43,6 +48,7 @@
 		F93B231123E681C9002E34F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F93B231323E681C9002E34F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F995F88F23FB9DD700A669BF /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		F995F89123FBFECF00A669BF /* Advertisement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertisement.swift; sourceTree = "<group>"; };
 		F9C547AA23EE8F6800A69C28 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,17 +57,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E20F7ABD04908E07CD9B2A0 /* Pods_AntiConsumerism.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB70959FB9AF6C7BF4AE84A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F41D925757EC3C607DE09E46 /* Pods-AntiConsumerism.debug.xcconfig */,
+				D748C7CFEA1FDC19AD38B356 /* Pods-AntiConsumerism.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F93B22F923E681C2002E34F9 = {
 			isa = PBXGroup;
 			children = (
 				F93B230423E681C3002E34F9 /* AntiConsumerism */,
 				F93B230323E681C3002E34F9 /* Products */,
+				DB70959FB9AF6C7BF4AE84A2 /* Pods */,
+				FDCF689C2CD6657B443708E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +98,7 @@
 				F93B230523E681C3002E34F9 /* AppDelegate.swift */,
 				F93B230723E681C3002E34F9 /* SceneDelegate.swift */,
 				F93B230923E681C3002E34F9 /* HomeScreen.swift */,
+				F995F89123FBFECF00A669BF /* Advertisement.swift */,
 				F995F88F23FB9DD700A669BF /* Record.swift */,
 				F9235CC023EFF7F80037F5DA /* NeedOrWant.swift */,
 				F9235CC223F257F90037F5DA /* IWantIt.swift */,
@@ -113,6 +132,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FDCF689C2CD6657B443708E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D54F5CD14C09A6421AD4412 /* Pods_AntiConsumerism.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F93B231623E681C9002E34F9 /* Build configuration list for PBXNativeTarget "AntiConsumerism" */;
 			buildPhases = (
+				BB388F8DFC0EE47C9BA8EB67 /* [CP] Check Pods Manifest.lock */,
 				F93B22FE23E681C3002E34F9 /* Sources */,
 				F93B22FF23E681C3002E34F9 /* Frameworks */,
 				F93B230023E681C3002E34F9 /* Resources */,
+				246CB63E85172613A5C7AD69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +208,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		246CB63E85172613A5C7AD69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AntiConsumerism/Pods-AntiConsumerism-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AntiConsumerism/Pods-AntiConsumerism-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AntiConsumerism/Pods-AntiConsumerism-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB388F8DFC0EE47C9BA8EB67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AntiConsumerism-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F93B22FE23E681C3002E34F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -191,6 +262,7 @@
 				F9235CC323F257F90037F5DA /* IWantIt.swift in Sources */,
 				F9C547AB23EE8F6800A69C28 /* UserData.swift in Sources */,
 				F9235CC723F262CB0037F5DA /* Succeed.swift in Sources */,
+				F995F89223FBFECF00A669BF /* Advertisement.swift in Sources */,
 				F995F89023FB9DD700A669BF /* Record.swift in Sources */,
 				F9235CC123EFF7F80037F5DA /* NeedOrWant.swift in Sources */,
 				F93B230A23E681C3002E34F9 /* HomeScreen.swift in Sources */,
@@ -330,6 +402,7 @@
 		};
 		F93B231723E681C9002E34F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41D925757EC3C607DE09E46 /* Pods-AntiConsumerism.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -350,6 +423,7 @@
 		};
 		F93B231823E681C9002E34F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D748C7CFEA1FDC19AD38B356 /* Pods-AntiConsumerism.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

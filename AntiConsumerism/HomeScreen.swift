@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 struct HomeScreen: View {
 //    var userData = UserData()
@@ -43,7 +44,12 @@ struct HomeScreen: View {
                 }.padding()
             }
             Spacer()
-            Text("Adevertisment placeholder")
+            HStack {
+                Spacer()
+                Advertisement()
+                    .frame(width:kGADAdSizeBanner.size.width , height: kGADAdSizeBanner.size.height)
+                Spacer()
+            }
         }
     }
 }

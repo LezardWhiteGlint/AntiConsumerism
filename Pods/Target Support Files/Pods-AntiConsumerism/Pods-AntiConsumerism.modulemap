@@ -1,0 +1,6 @@
+framework module Pods_AntiConsumerism {
+  umbrella header "Pods-AntiConsumerism-umbrella.h"
+
+  export *
+  module * { export * }
+}
