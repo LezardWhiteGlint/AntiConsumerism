@@ -49,5 +49,6 @@ struct CostPercentage: View {
 struct CostPercentage_Previews: PreviewProvider {
     static var previews: some View {
         CostPercentage()
+        .environmentObject(RootState())
     }
 }

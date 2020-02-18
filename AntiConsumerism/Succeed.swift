@@ -41,5 +41,6 @@ struct Succeed: View {
 struct Succeed_Previews: PreviewProvider {
     static var previews: some View {
         Succeed()
+        .environmentObject(RootState())
     }
 }

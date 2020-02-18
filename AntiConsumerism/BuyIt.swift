@@ -39,5 +39,6 @@ struct BuyIt: View {
 struct BuyIt_Previews: PreviewProvider {
     static var previews: some View {
         BuyIt()
+        .environmentObject(RootState())
     }
 }

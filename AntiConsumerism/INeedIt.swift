@@ -50,5 +50,6 @@ struct INeedIt: View {
 struct INeedIt_Previews: PreviewProvider {
     static var previews: some View {
         INeedIt()
+        .environmentObject(RootState())
     }
 }

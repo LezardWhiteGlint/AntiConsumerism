@@ -9,8 +9,9 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    var userData = UserData()
+//    var userData = UserData()
     @EnvironmentObject var rootIsActive : RootState
+    @State var recordActive = false
     
     var body: some View {
         VStack {
@@ -18,9 +19,17 @@ struct HomeScreen: View {
                 VStack(alignment: .center, spacing: 20) {
                     HStack {
                         Spacer()
-                        Text("record")
-                            
-                    }
+                        NavigationLink("", destination: Record(), isActive: $recordActive)
+                        Button(action: {self.recordActive = true})
+                        {
+                            Text("历史记录")
+                            .foregroundColor(.white)
+                            .frame(width: 80, height: 40)
+                            .cornerRadius(15)
+                            .background(Color.blue)
+                        }
+                        
+                    }.padding(.bottom)
                     Text("本APP可以引导你对自己即将到来的消费进行理性思考，一定程度上减少不必要的浪费")
                         .font(.headline)
                     Divider()
@@ -42,5 +51,6 @@ struct HomeScreen: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreen()
+            .environmentObject(RootState())
     }
 }
